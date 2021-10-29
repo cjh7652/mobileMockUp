@@ -10,17 +10,23 @@
 </head>
 <body>
     <div class="phone">
-        <div class="content">
-            <iframe src="mobile/index.html" frameborder="0"></iframe>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script>
-        if (Modernizr.touchevents) {
-            location.href='./mobile/index.html';
-        } else {
-        // not-supported
-        }
-    </script>
+		<div class="content">
+			<iframe src="mobile/index.html" frameborder="0"></iframe>
+		</div>
+	</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script>
+	if (Modernizr.touchevents) {
+	  // supported
+	  //document.querySelector('.pc').style.display = 'none';
+	  //consloe.log(location.href);
+	  location.href='./mobile/index.html';
+	} else {
+	  // not-supported
+	 // document.querySelector('.mobile').style.display = 'none';
+	  //consloe.log(location.href);
+	}
+</script>
 </body>
 </html>
